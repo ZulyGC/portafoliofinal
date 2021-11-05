@@ -1,0 +1,28 @@
+
+        <!--EDITAR -->
+        <section class="gallery" id="venta3">
+            <div class="contenedor">
+                <h2 class="subtitulo">ACTULIZAR REGISTRO</h2>
+                <div class="contenedor-galeria">
+                    <div class="row">
+                        <form action="/edit/<%= venta._id %>" method="POST">
+                        <div class="col-6 p-2">
+                            <label for="formGroupExampleInput" class="form-label ">Marca de zapato</label>
+                            <input name = "marca" type="text" class="form-control" value="<%=venta.marca %>">
+                        </div>
+                        <div class="col-6 p-2">
+                            <label for="formGroupExampleInput" class="form-label ">Tipo de zapato</label>
+                            <input name = "tipo" type="text" class="form-control" value="<%=venta.tipo %>">
+                        </div>
+                        <div class="col-6 p-2">
+                            <label for="formGroupExampleInput" class="form-label ">Color</label>
+                            <input name = "color" type="text" class="form-control" value="<%=venta.color %>">
+                        </div>
+                        <div class="col-8 p-2">
+                            <form class="login-form"  method="post">
+                                <button class="btn btn-outline-primary btn-md" type="submit" >ACTULIZAR</button>
+                            </form>
+                        </form>
+                        </div>
+            </div>
+        </section>
